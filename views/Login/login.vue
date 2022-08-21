@@ -63,6 +63,9 @@ export default {
             }
         }
     },
+    created() {
+        alert("管理员账号：admin 密码：admin \n 普通账号：congtou 密码：congtou")
+    },
     methods: {
         login() {
             getMenu(this.form).then(({ data: res }) => {
